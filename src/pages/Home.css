@@ -1,0 +1,21 @@
+.carousel_box img{
+    height: 80vh;
+    width: 100vw;
+}
+.img_box{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.button_box{
+    width: 100vw;
+    height: 10%;
+}
+.button_box button{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(237, 215, 11);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
+}

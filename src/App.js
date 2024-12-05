@@ -1,17 +1,21 @@
-import React from 'react'
 
-const App = () => {
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import Home from "./pages/Home";
+import Items from "./pages/Items";
+import Header from "./components/Header";
+
+function App() {
   return (
-    <div style={{textAlign:'center'}}>
-      <h3>Hi Bujjamma</h3>
-      <p>nikosam website chestanu today, ide website link</p>
-      <p>i will try my level best to make more user friendly sarena</p>
-      <p><i>Until then LOVE YOU BUJJI</i></p>
-      <br/>
-      <p>From your lovely</p>
-      <h2>AZZU</h2>
-    </div>
-  )
+    <>
+      <Router>
+      <Header/>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/items" element={<Items />} />
+        </Routes>
+      </Router>
+    </>
+  );
 }
 
-export default App
+export default App;

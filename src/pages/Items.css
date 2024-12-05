@@ -1,0 +1,110 @@
+.items_div {
+  display: flex;
+  width: 100vw;
+  height: 85vh;
+}
+.left_section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.inp_div {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+.inp_btn {
+  height: 70px;
+  width: 80%;
+  border-radius: 30px;
+  padding: 0 100px;
+  font-weight: bold;
+  color: blue;
+  font-size: 25px;
+}
+.icon {
+  position: relative;
+  left: 5%;
+  top: 15px;
+  color: blue;
+  font-size: 40px;
+}
+.cart_div {
+  width: 30%;
+  height: 100%;
+  /* background-color: green; */
+  box-shadow: 5px 5px 15px black, -5px -5px 15px white;
+}
+
+.products_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+.product_card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.product_card img {
+  height: 150px;
+  margin: 5px;
+}
+
+.product_card:hover {
+  transform: scale(1.05);
+  background-color: #f9f9f9;
+}
+
+.cart_div {
+  margin-top: 20px;
+}
+
+.cart_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.product_card button{
+  background-color: yellow;
+  border-radius: 10px;
+  width: 50%;
+}
+.cart_image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.try_now_btn, .try_all_btn {
+  background-color: blue;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.remove_btn{
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+}
+.try_all_btn {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+.try_now_btn:hover {
+  background-color: rgb(66, 56, 56);
+}
+.try_all_btn:hover {
+  background-color:rgb(66, 56, 56);
+}
