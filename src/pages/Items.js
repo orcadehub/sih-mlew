@@ -97,7 +97,7 @@ const Items = () => {
             {filteredProducts.length > 0 ? (
               filteredProducts.map((product) => (
                 <div key={product.productId} className="product_card">
-                  <strong>{product.name}</strong>
+                  <strong>{product.name}</strong> <br/>
                   <img src={product.image} alt={product.name} />
                   <br />
                   <button onClick={() => addToCart(product)}>Add</button>
