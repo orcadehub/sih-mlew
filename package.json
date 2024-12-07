@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^9.120.1",
+    "@react-three/fiber": "^8.17.10",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -27,6 +29,7 @@
     "react-toastify": "^10.0.6",
     "stream-browserify": "^3.0.0",
     "sweetalert2": "^11.14.4",
+    "three": "^0.171.0",
     "ton": "^13.9.0",
     "ton-core": "^0.53.0",
     "tonweb": "^0.0.66",
