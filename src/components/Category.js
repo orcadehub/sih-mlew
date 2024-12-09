@@ -28,7 +28,7 @@ const categories = [
     image: Cat4,
   },
   {
-    name: "Pants",
+    name: "Jewelry",
     image: Cat5,
   },
 ];
