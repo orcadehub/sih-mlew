@@ -1,9 +1,12 @@
 import React from "react";
-import c1 from "../assets/c1.png";
+import c1 from "../assets/1.jpg";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
+import Category from "../components/Category";
+import Brand from "../components/Brand";
+import BestDeals from "../components/BestDeals";
 const Home = () => {
-    const navigate=useNavigate()
+  const navigate = useNavigate();
   return (
     <>
       <div id="carouselExampleIndicators" class="carousel slide carousel_box">
@@ -60,8 +63,17 @@ const Home = () => {
         </button>
       </div>
       <div className="button_box">
-        <button onClick={()=>{navigate('/items')}}>START WEARING</button>
+        <button
+          onClick={() => {
+            navigate("/items");
+          }}
+        >
+          START WEARING
+        </button>
       </div>
+      <BestDeals />
+      <Category />
+      <Brand />
     </>
   );
 };

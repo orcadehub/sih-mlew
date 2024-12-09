@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Items from "./pages/Items";
 import Header from "./components/Header";
 import Wearing from "./pages/Wearing";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         </Routes>
          {/* ToastContainer is added here */}
       <ToastContainer />
+      <Footer/>
       </Router>
     </>
   );

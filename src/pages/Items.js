@@ -7,7 +7,9 @@ import config from "../config";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import HumanModel from "../components/HumanModel";
-
+import A from "../assets/amazon.jpg";
+import F from "../assets/flip.png";
+import M from "../assets/myn.jpeg";
 const Items = () => {
   const [cart, setCart] = useState({});
   const [products, setProducts] = useState([]);
@@ -94,7 +96,10 @@ const Items = () => {
             Close Try-On
           </button>
           <div className="model_container">
-            <Canvas camera={{ position: [0, 2, 5], fov: 50 }} className="canvas">
+            <Canvas
+              camera={{ position: [0, 2, 5], fov: 50 }}
+              className="canvas"
+            >
               <ambientLight intensity={0.7} />
               <directionalLight position={[10, 10, 5]} intensity={1} />
               <HumanModel product={selectedProduct} />
@@ -126,9 +131,42 @@ const Items = () => {
                 {products.length > 0 ? (
                   products.map((product) => (
                     <div key={product.productId} className="product_card">
-                      <strong>{product.name}</strong> <br />
-                      <img src={product.image} alt={product.name} />
-                      <button onClick={() => addToCart(product)}>Add</button>
+                      <div className="content">
+                        <strong>{product.name}</strong> <br />
+                        <img src={product.image} alt={product.name} />
+                        <button onClick={() => addToCart(product)}>Add</button>
+                      </div>
+
+                      {/* Logos based on availableOn field */}
+                      <div className="platform_logos">
+                        {product.availableOn &&
+                          product.availableOn.includes("amazon") && (
+                            <img
+                              src={A}
+                              alt="Amazon"
+                              className="platform_logo"
+                              style={{height:'40px',width:'40px'}}
+                            />
+                          )}
+                        {product.availableOn &&
+                          product.availableOn.includes("flipkart") && (
+                            <img
+                              src={F}
+                              alt="Flipkart"
+                              className="platform_logo"
+                              style={{height:'40px',width:'40px'}}
+                            />
+                          )}
+                        {product.availableOn &&
+                          product.availableOn.includes("myntra") && (
+                            <img
+                              src={M}
+                              alt="Myntra"
+                              className="platform_logo"
+                              style={{height:'40px',width:'40px'}}
+                            />
+                          )}
+                      </div>
                     </div>
                   ))
                 ) : (

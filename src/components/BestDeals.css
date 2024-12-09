@@ -1,0 +1,129 @@
+.best_deals_container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .deals_heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff5722;
+  }
+  
+  .deals_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .deal_card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .deal_card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .deal_image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .deal_info {
+    padding: 10px;
+  }
+  
+  .product_name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .product_price {
+    color: #388e3c;
+    font-weight: 600;
+    margin: 5px 0;
+  }
+  
+  .product_offer {.best_deals_container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .deals_heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff5722;
+  }
+  
+  .deals_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .deal_card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .deal_card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .deal_image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .deal_info {
+    padding: 10px;
+  }
+  
+  .product_name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .product_price {
+    color: #388e3c;
+    font-weight: 600;
+    margin: 5px 0;
+  }
+  
+  .product_offer {
+    font-size: 0.9rem;
+    color: #ff5722;
+  }
+  
+  .no_deals {
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 20px;
+  }
+  
+    font-size: 0.9rem;
+    color: #ff5722;
+  }
+  
+  .no_deals {
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 20px;
+  }
+  
